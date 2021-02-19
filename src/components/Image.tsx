@@ -10,7 +10,7 @@ const Image: React.FC<NasaImageProps> = (props)=>{
     <div style={{display: "flex", justifyContent: "center", padding: "2em"}}>
       <img 
         src={props.imageURL} 
-        style={{maxHeight: "80%", maxWidth: "80%"}} 
+        style={{maxHeight: "100%", maxWidth: "100%"}} 
         alt={props.alt} 
         />
     </div>
