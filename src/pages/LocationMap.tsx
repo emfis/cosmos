@@ -1,13 +1,10 @@
 import * as React from "react";
 import Grid from "@material-ui/core/Grid";
-import {fetchNasaImage} from "../services/NASA";
+import { fetchNasaImage } from "../services/NASA";
 import { Skeleton } from "@material-ui/lab";
-import {useQuery} from "react-query";
+import { useQuery } from "react-query";
 import LocationSearch from "../components/LocationSearch";
-import Map from "../components/Map";
-import Image from "../components/Image";
-import PageWrapper from "../components/PageWrapper";
-import Alert from "../components/Alert";
+import { Map, Image, PageWrapper, Alert } from "../components";
 
 const LocationPage: React.FC = ()=>{
   const [position, setPosition] = React.useState<[number,number]>([50.28333, 18.66667]);
@@ -30,7 +27,6 @@ const LocationPage: React.FC = ()=>{
           { !isLoading && error && <Alert message={error}/>}
         </Grid>
       </Grid>
-
     </PageWrapper>
   );
 }
