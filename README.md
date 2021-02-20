@@ -13,7 +13,7 @@
 
 ## App config
 
-- The file `app.config.js` should defined in root directory - normally it should be added to gitignore and managed separately 
+- The file `app.config.js` should be defined in root directory - normally it is added to gitignore and managed separately 
 
 ## Share server by LAN
 
